@@ -3,9 +3,10 @@ const app = require("./config/server");
 const io = require("socket.io")(server);
 const swal = require("sweetalert");
 const push = require("push.js");
+require("dotenv/config");
 
 //port
-var server = app.listen(80, () => {
+var server = app.listen(3000 || process.env.PORT, () => {
   console.log("sevidor online");
   console.log(
     "												 \n" +

@@ -133,7 +133,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 
     <script>
-      var socket = io("http://fff570b4.ngrok.io/chat");
+      var urlSocket = "http://localhost:80";
+      var socket = io(urlSocket);
 
       socket.on("conect", message => {
         renderNewConects(message);

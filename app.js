@@ -5,9 +5,9 @@ const swal = require("sweetalert");
 const push = require("push.js");
 
 //port
-
-var server = app.listen(process.env.PORT || 3000, () => {
-  console.log("sevidor online");
+var port = process.env.PORT || 3000;
+var server = app.listen(port, () => {
+  console.log("sevidor online port =" + port);
   console.log(
     "												 \n" +
       "												 \n" +

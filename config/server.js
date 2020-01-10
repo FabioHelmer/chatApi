@@ -17,8 +17,6 @@ app.use(cors());
 app.use(express.static("app/public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
-app.use(require("./app/controllers"));
-app.use(require("./app/routes"));
 //autoload
 consign()
   .include("app/routes")

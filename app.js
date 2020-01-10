@@ -6,7 +6,7 @@ const push = require("push.js");
 require("dotenv/config");
 
 //port
-var server = app.listen(3000 || process.env.PORT, () => {
+var server = app.listen(process.env.PORT || 3000, () => {
   console.log("sevidor online");
   console.log(
     "												 \n" +

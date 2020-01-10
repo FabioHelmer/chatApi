@@ -3,12 +3,8 @@ const app = require("./config/server");
 const io = require("socket.io")(server);
 const swal = require("sweetalert");
 const push = require("push.js");
-const cors = require("cors");
-
-require("dotenv/config");
 
 //port
-app.use(cors());
 
 var server = app.listen(process.env.PORT || 3000, () => {
   console.log("sevidor online");
@@ -26,8 +22,6 @@ var server = app.listen(process.env.PORT || 3000, () => {
 
 io.listen(server);
 app.set("io", io);
-app.set("swal", swal);
-app.set("push", push);
 
 let messagens = [];
 

@@ -15,13 +15,13 @@ app.set("views", "app/views");
 //middleware
 app.use(cors());
 app.use(express.static("app/public"));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(expressValidator());
 //autoload
 consign()
   .include("app/routes")
   .then("app/controllers")
   .then("app/models")
   .into(app);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(expressValidator());
 
 module.exports = app;

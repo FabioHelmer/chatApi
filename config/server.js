@@ -20,8 +20,8 @@ app.use(expressValidator());
 //autoload
 consign()
   .include("app/routes")
-  .then("app/models")
   .then("app/controllers")
+  .then("app/models")
   .into(app);
 
 module.exports = app;

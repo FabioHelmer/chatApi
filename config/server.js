@@ -17,8 +17,8 @@ app.use(cors());
 app.use(express.static("app/public"));
 //autoload
 consign()
-  .include("app/routes")
-  .then("app/controllers")
+  .include("app/controllers")
+  .then("app/routes")
   .then("app/models")
   .into(app);
 app.use(bodyParser.urlencoded({ extended: true }));

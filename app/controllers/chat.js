@@ -1,4 +1,4 @@
-module.exports = (aplication, req, res) => {
+module.exports.chat = (aplication, req, res) => {
   var dadosForm = req.body;
   console.log(dadosForm);
 

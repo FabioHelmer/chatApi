@@ -1,4 +1,4 @@
-module.exports.iniChat = (aplication, req, res) => {
+module.exports = (aplication, req, res) => {
   var dadosForm = req.body;
   console.log(dadosForm);
 

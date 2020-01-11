@@ -1,3 +1,3 @@
-module.exports.home = (aplication, req, res) => {
+module.exports = (aplication, req, res) => {
   res.render("index", { validacao: {} });
 };

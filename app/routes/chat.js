@@ -3,7 +3,7 @@ module.exports = aplication => {
     console.log(aplication.controllers.chat);
     console.log("-----------------------------");
     console.log(aplication.controllers);
-    aplication.controllers.Chat.get("chat_init")(aplication, req, res);
+    aplication.controllers.Chat(aplication, req, res);
     console.log(aplication.app.controllers);
   });
   aplication.get("/chat", (req, res) => {

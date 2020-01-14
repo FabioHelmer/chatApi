@@ -1,8 +1,6 @@
 //config servidor
 const app = require("./config/server");
 const io = require("socket.io")(server);
-const swal = require("sweetalert");
-const push = require("push.js");
 
 //port
 var port = process.env.PORT || 3000;

@@ -1,8 +1,7 @@
-module.exports.chat = (aplication, req, res) => {
+module.exports.chat_init = (aplication, req, res) => {
   var dadosForm = req.body;
   console.log(dadosForm);
 
-  var swal = aplication.get("swal");
   req.assert("apelido", "Nome ou Apelido é obrigatorio").notEmpty();
   req
     .assert("apelido", "Nome ou Apelido deve conter entre 3 e 15 caracteres")

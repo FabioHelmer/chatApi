@@ -1,4 +1,6 @@
 module.exports = (aplication, req, res) => {
+  console.log(req);
+
   var dadosForm = req.body;
   console.log(dadosForm);
 

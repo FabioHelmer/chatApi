@@ -1,5 +1,8 @@
 module.exports = aplication => {
   aplication.post("/chat", (req, res) => {
+    console.log(aplication.app.controllers);
+    console.log("-----------------------------");
+    console.log(aplication.controllers);
     aplication.controllers.Chat.chat_init(aplication, req, res);
     console.log(aplication.app.controllers);
   });
